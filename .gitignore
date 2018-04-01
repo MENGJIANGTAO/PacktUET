@@ -3,3 +3,12 @@
 ################################################################################
 
 /Saved/Logs
+/Saved/Config/CrashReportClient
+/Saved/Backup
+/Saved
+/Intermediate/ReimportCache
+/Intermediate/Build/Win64/UE4Editor
+/Intermediate/Build
+/Intermediate
+/Binaries/Win64
+/.vs
