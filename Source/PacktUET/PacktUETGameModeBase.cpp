@@ -5,3 +5,8 @@
 
 
 
+APacktUETGameModeBase::APacktUETGameModeBase(const FObjectInitializer& PCIP) : Super(PCIP)
+{
+	UUserProfile* u1 = NewObject<UUserProfile>();
+	UE_LOG(LogTemp, Log, TEXT("Found UObject named: %s"), *u1->GetName());
+}
