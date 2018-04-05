@@ -4,9 +4,18 @@
 
 
 
-
 APacktUETGameModeBase::APacktUETGameModeBase(const FObjectInitializer& PCIP) : Super(PCIP)
 {
-	UUserProfile* u1 = NewObject<UUserProfile>();
-	UE_LOG(LogTemp, Log, TEXT("Found UObject named: %s"), *u1->GetName());
+	//APacktUETGameModeBase *gm = Cast<APacktUETGameModeBase>(GetWorld()->GetAuthGameMode());
+	//if (gm)
+	//{
+		UUserProfile* u1 = NewObject<UUserProfile>();
+		UE_LOG(LogTemp, Log, TEXT("Found UObject named: %s"), *u1->GetName());
+	//}
+	
+}
+
+void APacktUETGameModeBase::BeginPlay()
+{
+	UE_LOG(LogTemp, Warning, TEXT("BeginPlayisDoing."));
 }
