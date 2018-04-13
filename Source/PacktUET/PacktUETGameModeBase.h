@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
+#include "TestActor.h"
 #include "UserProfile.h"
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
@@ -40,6 +41,10 @@ public:
 	FColorTexture Texture;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = HUD)
 	TEnumAsByte<MStatus> States;
+	UPROPERTY()
+	ATestActor* T1;
+	UFUNCTION()
+	void DestoryActorFunction();
 	APacktUETGameModeBase(const FObjectInitializer& PCIP);
 	void BeginPlay();
 
