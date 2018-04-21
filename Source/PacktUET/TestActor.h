@@ -15,7 +15,13 @@ public:
 	// Sets default values for this actor's properties
 	ATestActor();
 	UPROPERTY()
-	UStaticMeshComponent* Mesh;
+	USceneComponent* Root;
+	UPROPERTY()
+	USceneComponent* ChildSceneComponent;
+	UPROPERTY()
+	UStaticMeshComponent* Mesh1;
+	UPROPERTY()
+	UStaticMeshComponent* Mesh2;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
